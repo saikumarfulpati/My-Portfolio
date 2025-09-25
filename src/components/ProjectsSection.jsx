@@ -3,12 +3,12 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Parking Management System",
+    description: "A beautiful Mobile web app using React and Tailwind.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailwindCSS", "VS Code"],
+    demoUrl: "https://map-my-park.netlify.app/",
+    githubUrl: "https://github.com/saikumarfulpati/map-my-park",
   },
   {
     id: 2,
