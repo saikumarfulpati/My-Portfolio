@@ -10,6 +10,17 @@ const projects = [
     demoUrl: "https://map-my-park.netlify.app/",
     githubUrl: "https://github.com/saikumarfulpati/map-my-park",
   },
+
+  {
+  id: 2,
+  title: "AI Tools Hub",
+  description: "A modern responsive web app to explore, learn & access the best AI tools in one place. Built with React, Tailwind CSS, and Framer Motion.",
+  image: "/projects/project2.png",   // ✅ Save a screenshot of your site in public/projects/
+  tags: ["React", "TailwindCSS", "Framer Motion", "Vite"],
+  demoUrl: "https://aitools-hub.netlify.app/",  // ✅ replace with your deployed link
+  githubUrl: "https://github.com/saikumarfulpati/AI-Tools-Hub",
+},
+
  
 ];
 
