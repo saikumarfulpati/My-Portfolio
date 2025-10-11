@@ -6,7 +6,7 @@ const projects = [
     title: "Parking Management System",
     description: "A beautiful Mobile web app using React and Tailwind.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "VS Code"],
+    tags: ["HTML5", "CSS3", "JavaScript", "VS Code"],
     demoUrl: "https://map-my-park.netlify.app/",
     githubUrl: "https://github.com/saikumarfulpati/map-my-park",
   },
