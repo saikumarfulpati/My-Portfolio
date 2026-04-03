@@ -5,7 +5,6 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
   Github,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -30,12 +29,15 @@ export const ContactSection = () => {
     }, 1500);
   };
   return (
-    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+    <section id="contact" className="py-24 px-4 relative bg-muted/40">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+        <span className="section-label text-center block">Let's talk</span>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
+          Get In <span className="text-primary">Touch</span>
         </h2>
-
+        <p className="text-center text-muted-foreground max-w-xl mx-auto mb-14">
+          Have a project in mind? I'd love to hear from you.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
@@ -44,71 +46,91 @@ export const ContactSection = () => {
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+            <div className="space-y-6">
+              {/* Email */}
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-xl bg-primary/15 ring-1 ring-primary/20 shrink-0">
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium"> Email</h4>
+                <div className="flex flex-col items-start">
+                  <p className="text-sm font-semibold text-foreground">Email</p>
                   <a
-                    href="mailto:hello@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    href="mailto:saikumarfulpati@gmail.com"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     saikumarfulpati@gmail.com
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+
+              {/* Phone */}
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-xl bg-primary/15 ring-1 ring-primary/20 shrink-0">
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium"> Phone</h4>
+                <div className="flex flex-col items-start">
+                  <p className="text-sm font-semibold text-foreground">Phone</p>
                   <a
                     href="tel:+919284544279"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     +91 9284544279
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+
+              {/* Location */}
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-xl bg-primary/15 ring-1 ring-primary/20 shrink-0">
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-start">
+                  <p className="text-sm font-semibold text-foreground">Location</p>
+                  <p className="text-sm text-muted-foreground">
                     Solapur, Maharashtra
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/saikumarfulpati" target="_blank">
-                  <Linkedin />
+              <h4 className="font-semibold mb-4">Connect With Me</h4>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/saikumarfulpati"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon p-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:border-primary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  aria-label="LinkedIn profile"
+                >
+                  <Linkedin size={22} aria-hidden />
                 </a>
-                <a href="https://github.com/saikumarfulpati" target="_blank">
-                  <Github />
+                <a
+                  href="https://github.com/saikumarfulpati"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon p-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:border-primary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  aria-label="GitHub profile"
+                >
+                  <Github size={22} aria-hidden />
                 </a>
-                <a href="https://www.instagram.com/sai_711_/" target="_blank">
-                  <Instagram />
+                <a
+                  href="https://www.instagram.com/sai_711_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon p-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:border-primary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  aria-label="Instagram profile"
+                >
+                  <Instagram size={22} aria-hidden />
                 </a>
               </div>
             </div>
           </div>
 
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+          <div className="bg-card/95 backdrop-blur-sm p-8 rounded-2xl border border-border/50 shadow-lg shadow-foreground/5">
+            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -122,7 +144,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   placeholder="Sai F..."
                 />
               </div>
@@ -140,7 +162,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   placeholder="sai@gmail.com"
                 />
               </div>
@@ -157,7 +179,7 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none transition-colors"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
